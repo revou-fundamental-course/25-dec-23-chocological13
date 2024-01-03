@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header id="navigationBar">
+        <h1 id="logo">Triangle Calculator</h1>
+        <nav class="navigation">
+            <a href="#triangleArea">Triangle Area</a>
+            <a href="#trianglePerimeter">Triangle Perimeter</a>
+        </nav>
+    </header>
+    <div>
+        <img id="trianglePicture" src="https://curvebreakerstestprep.com/wp-content/uploads/2021/04/Triangle-Area-and-Perimeter.png" alt="triangle">
+    </div>
+    <section class="inputAreaSection">
+        <h3 id="triangleArea">Triangle Area</h3>
+
+        <label for="inputHeight" id="labelHeight">Height:</label>
+        <input type="number" class="inputCalculator" id="inputHeight"><br>
+
+        <label for="inputBase" id="labelBase">Base:</label>
+        <input type="number" class="inputCalculator" id="inputBase"><br>
+
+        <label for="inputAreaUnit" id="labelAreaUnit">Unit: </label>
+        <input type="text" class="inputCalculator" id="inputAreaUnit"><br>
+        <div class="buttons">
+            <button onclick="calculateArea()">Calculate</button>
+            <button onclick="resetAreaFields()">Reset</button>
+        </div>
+    
+        <label for="resultArea" id="labelArea">Result: 
+            <span id="resultArea"></span>
+            <span id="resultAreaUnit"></span>
+        </label>
+    </section>
+    <br>
+    <section class="inputPerimeterSection">
+        <h3 id="trianglePerimeter">Triangle Perimeter</h3>
+
+        <label for="inputSideA" id="labelSideA">Side A:</label>
+        <input type="number" class="inputCalculator" id="inputSideA"><br>
+
+        <label for="inputSideB" id="labelsideB">Side B:</label>
+        <input type="number" class="inputCalculator" id="inputSideB"><br>
+
+        <label for="inputSideC" id="labelSideC">Side C:</label>
+        <input type="number" class="inputCalculator" id="inputSideC"><br>
+
+        <label for="inputPerimeterUnit" id="labelPerimeterUnit">Unit:</label>
+        <input type="text" class="inputCalculator" id="inputPerimeterUnit">
+
+        <div class="buttons">
+            <button onclick="calculatePerimeter()">Calculate</button>
+            <button onclick="resetPerimeterFields()">Reset</button>
+        </div>
+    
+        <label for="resultPerimeter" id="labelPerimeter">Result: 
+            <span id="resultPerimeter"></span>
+            <span id="resultPerimeterUnit"></span>
+        </label>
+    </section>
+</body>
+</html>
